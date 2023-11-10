@@ -6,6 +6,8 @@
     <title>Car-Nation</title>
 </head>
 <body>
-    
+    <?php
+    include_once <head></head>
+    ?>
 </body>
 </html>
