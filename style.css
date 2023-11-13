@@ -1,5 +1,12 @@
+/* START !IMPORTANT */
+.active{
+    background-color: rgb(143, 34, 34) !important;
+}
+/* END !IMPORTANT */
+
+
 body {
-    background-color: #1f1e1d;
+    background-color: #ffffff;
 }
 
 .NavHeader{
@@ -14,12 +21,19 @@ body {
     color: rgb(192, 192, 192);
 }
 
+.NavHeader:hover {
+    color: rgb(143, 34, 34);
+} 
 
-.test{
-    color: white;
+.NavHeader{
+    color: aliceblue;
 }
 
-/* To do */
-/* p:hover, a:hover {
-    background-color: yellow;
-  } */
+.imgrad{
+    border-radius: 10px;
+    border: 2px solid rgb(31, 31, 31);
+}
+
+.titlecards{
+    font-weight: bold;
+}

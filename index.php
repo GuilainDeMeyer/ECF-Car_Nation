@@ -9,52 +9,86 @@
 </head>
 
 <body>
-<!-- START Header -->
-    <header class="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4 border-bottom navbar-dark bg-dark">
-        <div class="col-12 col-lg-4 justify-content-center">
-            <a href="index.php" class="d-flex align-items-center justify-content-center mb-3 mb-md-0 link-body-emphasis text-decoration-none">
-                <img src="Assets/Logo/Car-NationNoBG.png" alt="logoCN" width="80px">
-            </a>
+<!-- HEADER -->
+<?php 
+require_once('templates/header.php')
+?>
+
+
+
+<!-- MAIN -->
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 px-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="assets/Gallery/1969-chevrolet-camaro-z28.jpg" class="imgrad d-block mx-lg-auto img-fluid" alt="MainIMG" width="700" height="500" loading="lazy">
         </div>
-
-        <ul class="nav nav-pills col-12 col-lg-4 mb-2 justify-content-center align-items-center">
-            <li><a href="#" class="NavHeader nav-link active px-2">Présentation</a></li>
-            <li><a href="#" class="NavHeader nav-link px-2">Atelier</a></li>
-            <li><a href="#" class="NavHeader nav-link px-2">Galerie Photos</a></li>
-            <li><a href="#" class="NavHeader nav-link px-2">Recrutement</a></li>
-            <li><a href="#" class="NavHeader nav-link px-2">Nous contacter</a></li>
-        </ul>
-
-        <div class="col-12 col-lg-4 d-flex justify-content-center">
-            <button type="button" class="btn btn-outline-danger me-2">Login</button>
-            <button type="button" class="btn btn-danger">Sign-up</button>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Car-Nation : Restauration de véhicules anciens</h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-outline-danger btn-lg px-4">Gallerie Véhicules</button>
+            </div>
         </div>
-    </header>
-    <!-- END Header -->
+    </div>
 
 
 
-
-
-
-
-
-
-<!-- START footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="nav col-12 col-lg-4 justify-content-center">
-            <p class="Footertxt">© 2023 Car-Nation, Inc</p>
+    <!-- CARDS -->
+    <div class="container py-5">
+        <h2 class="text-center display-8 fw-bold text-body-emphasis align-item-center pb-2">Restauration : Carrosserie Peintures Aérogommage</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="assets/Gallery/50276693852_ae5d9b0c45_o.jpg" class="card-img-top" alt="imgcard1" width="250">
+                    <div class="card-body CardSoutien CTextSoutien">
+                        <h2 class="titlecards">Carrosserie</h2>
+                        <p class="card-text">Traitement anticorrosion, remise en état des tôles corrodées par découpe, soudure aluminium, acier et brasure, formage de la tôle.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="assets/Gallery/50621795238_8f868c5da6_o.jpg" class="card-img-top" alt="imgcard2" width="250">
+                    <div class="card-body CardSoutien CTextSoutien">
+                        <h2 class="titlecards">Peinture</h2>
+                        <p class="card-text">Démontage complet ou partiel pour peinture, sablage, aérogommage, lustrage, vernis ...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="assets/Gallery/50502970153_045da7eee9_o.jpg" class="card-img-top" alt="imgcard3" width="250">
+                    <div class="card-body CardSoutien">
+                        <h2 class="titlecards">Aérogommage</h2>
+                        <p class="card-text CTextSoutien">Assainissement et restitution de l’aspect d’origine des revêtements ou éléments décapés pour un métal lisse, propre et débarrassé de la peinture et de la corrosion.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <a href="index.php" class="col-12 col-lg-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <img src="Assets/Logo/Car-NationNoBG.png" alt="logoCN" width="80px">
-        </a>
 
-        <div class="nav col-12 col-lg-4 justify-content-center">
-            <p><a href="index.php" class="Footertxt nav-link px-2 text-body-active">Nous contacter</a></p>
+
+<!-- ABOUT US -->
+    <div class="row flex-lg-row align-items-center g-5 py-5 px-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="assets/Gallery/NB-Center-Employee-Anthony-6.avif" class="imgrad d-block mx-lg-auto img-fluid" alt="MainIMG" width="700" height="500" loading="lazy">
         </div>
-    </footer>
-<!-- END Footer -->
+        <div class="col-lg-6">
+            <h3 class="display-8 fw-bold text-body-emphasis lh-1 mb-3">Atelier : Qui sommes nous ?</h3>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-outline-danger btn-md px-4">A propos de nous</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- FOOTER -->
+<?php 
+require_once('templates/footer.php')
+?>
 
 
 
